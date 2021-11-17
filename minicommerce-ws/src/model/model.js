@@ -13,11 +13,11 @@ const generateId = async()=>{
 const generateOrderId = async()=>{
     let empData = await connection.getOrderSchema();
     let eids = await empData.distinct('orderId');
-    let maxEid = Math.max(...eids);
-    maxEid = maxEid+1;
-    maxEid = maxEid.toString();
-    let oId = maxEid.substring(1);
-    return "O"+oId;
+    let oid = ""
+    eids.map((id)=>{ oid = id.substr(1) })
+    let bId = parseInt(oid);
+    let oId = "O"+(bId+1)
+    return oId;
 }
 
 
@@ -122,6 +122,23 @@ model.viewCart = async(email)=>{
         return userCart
     }else{
             return null;        
+    }
+}
+
+model.checkOut = async(add,email)=>{
+    console.log(add);
+    let cart = await connection.getOrderSchema();
+    let userCart = await cart.updateOne({userEmail:email},{$set:{address:add}});
+    // console.log("------------ChecckOut----------------");
+    // console.log(userCart);
+    // let order = await connection.getOrderSchema();
+    let userOrder = await cart.find({userEmail:email});
+    // console.log("userOredr === "+userOrder);
+    if(userCart.modifiedCount == 1){
+        // console.log(userOrder.orderId);
+        return userOrder[0].orderId;
+    }else{
+        return null;
     }
 }
 

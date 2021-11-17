@@ -42,5 +42,16 @@ export class CartComponent implements OnInit {
   goBack(){
     this.sendProducts = false;
   }
+  successMsg;
+  checkOutUser(){
+    this.service.checkOut(this.checkOutForm.value,this.email).subscribe((res)=>{
+      console.log("called");
+      
+      console.log(res);
+      this.successMsg = "Order with order id "+ res +" will be delivered"
+    },(error)=>{
+
+    })
+  }
 }
 

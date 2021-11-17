@@ -71,4 +71,18 @@ router.get('/viewcart/:email',async(req,res,next)=>{
     }
 })
 
+router.post('/checkout/:email',async(req,res,next)=>{
+    try{
+        let email = req.params.email;
+        // console.log(req.body.address);
+        let checkResponse = await service.checkOut(req.body,email);
+        // console.log("-----------------------------------------------------------");
+        // console.log(checkResponse);
+        // return checkResponse
+        res.json(checkResponse)
+    }catch(error){
+        next(error);
+    }
+})
+
 module.exports = router;

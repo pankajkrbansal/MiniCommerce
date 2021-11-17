@@ -33,5 +33,10 @@ viewCart(userEmail):Observable<any>{
   return this.http.get(`http://localhost:1050/viewcart/${userEmail}`);
 }
 
+checkOut(data,email):Observable<any>{
+  console.log(data);
+  
+  return this.http.post(`http://localhost:1050/checkout/${email}`,data)
+}
 
 }

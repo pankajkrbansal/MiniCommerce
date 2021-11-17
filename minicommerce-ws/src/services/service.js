@@ -58,5 +58,16 @@ user.viewCart = async(email)=>{
     }
 }
 
+user.checkOut = async(data,email)=>{
+    let res = await model.checkOut(data,email);
+    console.log("res = "+res);
+    if(res){
+        return res;
+    }else{
+        let err = new Error("Failed to log address");
+        err.status = 500;
+        throw err;
+    }
+}
 
 module.exports = user;

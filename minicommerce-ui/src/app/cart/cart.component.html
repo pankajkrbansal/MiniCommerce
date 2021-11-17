@@ -24,10 +24,21 @@
     </div>
 </div>
 
-<div class="container" *ngIf="sendProducts">
-    CheckOut form
+<div class="container" style="width: 50%;" *ngIf="sendProducts">
+    <h4>Provide Delivery Address</h4>
+    <form [formGroup]="checkOutForm" (ngSubmit)="checkOutUser()">
+        <div class="form-control">
+            <label for="address">Address</label>
+            <input type="text" formControlName="address" id="email" class="form-control">
+            <div class="emailError" *ngIf="(checkOutForm.controls.address.dirty && checkOutForm.controls.address.invalid) || checkOutForm.controls.address.touched">
+                <span class="text text-danger" *ngIf="checkOutForm.controls.address.errors?.required">Field required</span>
+            </div>
+        </div>
+        <button class="btn btn-primary" style="width: 100%;" type="submit" [disabled]="checkOutForm.invalid">Submit</button>
+        <span class="text text-success" *ngIf="successMsg">{{successMsg}}</span>
+    </form>
 </div>
 
-<div class="container" *ngIf="sendProducts">
-    <button class="btn btn-primary" (click)="goBack()">Go Back</button>
+<div class="container mt-5" *ngIf="sendProducts">
+    <button class="btn btn-primary" style="width: 100%;" (click)="goBack()">Go Back</button>
 </div>
