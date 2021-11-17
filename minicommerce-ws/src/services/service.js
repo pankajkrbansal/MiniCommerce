@@ -47,5 +47,16 @@ user.addToCart = async(productItems,userEmail) =>{
 }
 
 
+user.viewCart = async(email)=>{
+    let cartView = await model.viewCart(email);
+    if(cartView){
+        return  cartView
+    }else{
+        let err = new Error("Failed to fetch cart");
+        err.status = 500;
+        throw err;
+    }
+}
+
 
 module.exports = user;

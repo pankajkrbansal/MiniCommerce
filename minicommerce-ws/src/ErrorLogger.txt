@@ -170,4 +170,127 @@ Tue Nov 16 2021 16:03:47 GMT+0530 (India Standard Time) - ReferenceError: User i
     at MessageStream._write (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
     at writeOrBuffer (internal/streams/writable.js:358:12)
     at MessageStream.Writable.write (internal/streams/writable.js:303:10)
-    at Socket.ondata (internal/streams/readable.js:719:22)
+    at Socket.ondata (internal/streams/readable.js:719:22)Wed Nov 17 2021 16:29:53 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:161:17)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24Wed Nov 17 2021 16:30:10 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:161:17)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24Wed Nov 17 2021 16:30:16 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:161:17)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24Wed Nov 17 2021 19:28:31 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:29:32 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:29:33 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:32:37 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:33:08 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:33:09 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:33:10 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:34:37 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 19:34:42 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:105:17)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24Wed Nov 17 2021 20:18:54 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 20:18:57 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:105:17)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24Wed Nov 17 2021 20:22:02 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:78:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 20:22:07 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:78:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 20:22:13 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:78:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 20:22:14 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:78:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:25:08 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:25:59 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:26:01 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:26:22 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:28:29 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:29:03 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:29:54 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:31:19 GMT+0530 (India Standard Time) - TypeError: this.checkAvailability is not a function
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:81:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:31:34 GMT+0530 (India Standard Time) - TypeError: maxEid.substring is not a function
+    at generateOrderId (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:17:22)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:84:27)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:31:44 GMT+0530 (India Standard Time) - TypeError: maxEid.substring is not a function
+    at generateOrderId (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:17:22)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:84:27)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:32:03 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: orderId: Path `orderId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 22:33:13 GMT+0530 (India Standard Time) - TypeError: maxEid.substring is not a function
+    at generateOrderId (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:17:22)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:84:27)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27

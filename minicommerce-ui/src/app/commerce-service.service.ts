@@ -30,8 +30,7 @@ addToCart(data,email):Observable<any>{
 }
 
 viewCart(userEmail):Observable<any>{
-  let url = `http://localhost:1050/viewcart/${userEmail}`
-  return this.http.get(url);
+  return this.http.get(`http://localhost:1050/viewcart/${userEmail}`);
 }
 
 

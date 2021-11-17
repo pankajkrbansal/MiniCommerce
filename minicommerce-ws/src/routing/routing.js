@@ -51,7 +51,7 @@ router.post('/addtocart/:userEmail',async(req,res,next)=>{
     try{
         let userEmail = req.params.userEmail;
         // console.log(userEmail);
-        // console.log(req.body);
+        console.log(req.body);
         let updatedCart = await service.addToCart(req.body,userEmail);
         return updatedCart
     }catch(error){
@@ -61,7 +61,11 @@ router.post('/addtocart/:userEmail',async(req,res,next)=>{
 
 router.get('/viewcart/:email',async(req,res,next)=>{
     try{
-        
+        let email = req.params.email;
+        let cartView = await service.viewCart(email);
+        console.log("-----Cart-------");
+        console.log(cartView);
+        res.json(cartView)
     }catch(error){
         next(error);
     }

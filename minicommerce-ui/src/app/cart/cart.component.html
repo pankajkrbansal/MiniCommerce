@@ -1,1 +1,28 @@
-<p>cart works!</p>
+<!-- <p>cart works!</p> -->
+<div class="container" *ngIf="!sendProducts">
+    <div class="row mt-4" *ngFor="let item of cart">
+        <div class="col-md-2">
+            <img class="card-img-top" id="cardImg" src="../../assets/{{item.img}}">
+            <div>
+                {{item.title}} <br>
+                <h4>{{item.price | currency:'INR':'symbol'}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="!sendProducts">
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-primary" (click)="shareData()" style="width: 100%;">CheckOut</button>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="sendProducts">
+    CheckOut form
+</div>
+
+<div class="container" *ngIf="sendProducts">
+    <button class="btn btn-primary" (click)="goBack()">Go Back</button>
+</div>

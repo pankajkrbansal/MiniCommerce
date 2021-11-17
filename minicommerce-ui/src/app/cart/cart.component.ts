@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder,FormGroup, Validators } from '@angular/forms';
 import { CommerceServiceService } from '../commerce-service.service';
 
 @Component({
@@ -8,16 +9,36 @@ import { CommerceServiceService } from '../commerce-service.service';
 })
 export class CartComponent implements OnInit {
 
-  constructor(private service:CommerceServiceService) { }
-  cart = null;
+  constructor(private service:CommerceServiceService,private fb:FormBuilder) { }
+  cart;
   errorMsg = null;
+  email = localStorage.getItem('email');
+  checkOutForm:FormGroup
   ngOnInit(): void {
-    
-    this.service.viewCart(localStorage.getItem('userEmail')).subscribe((cartData)=>{
-      this.cart = cartData
+    // let email = localStorage.getItem('email');
+    this.checkOutForm = this.fb.group(
+      {
+        address:['',Validators.required]
+      }
+    )
+    this.getCart();
+  }
+  getCart(){
+    console.log("getCart = > "+this.email);
+    this.service.viewCart(this.email).subscribe((res)=>{
+      console.log("Called");
+      this.cart = res.products;
+      console.log(res.products);
     },(error)=>{
-      this.errorMsg = "Error in fetching cart"
+      console.log(error);
     })
   }
-
+  sendProducts = false;
+  shareData(){
+    this.sendProducts = true;
+  }
+  goBack(){
+    this.sendProducts = false;
+  }
 }
+

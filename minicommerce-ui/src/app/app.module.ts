@@ -9,13 +9,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { CartComponent } from './cart/cart.component';
+// import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserAuthComponent,
     ProductsComponent,
-    CartComponent
+    CartComponent,
+    // CheckoutComponent
   ],
   imports: [
     BrowserModule,

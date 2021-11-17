@@ -10,6 +10,16 @@ const generateId = async()=>{
     return maxEid+1;
 }
 
+const generateOrderId = async()=>{
+    let empData = await connection.getOrderSchema();
+    let eids = await empData.distinct('orderId');
+    let maxEid = Math.max(...eids);
+    maxEid = maxEid+1;
+    maxEid = maxEid.toString();
+    let oId = maxEid.substring(1);
+    return "O"+oId;
+}
+
 
 model.didRegister = async(usrObj)=>{
     let usrSchema =await connection.getUserSchema();
@@ -53,105 +63,55 @@ model.getAllProducts = async()=>{
 }
 
 model.checkAvailability = async(productItem)=>{
-
+    let product = await connection.getProductSchema();
+    let item = await product.find({prodId:productItem.prodId});
+    if(item.quantity >= 1){
+        return true
+    }else{
+        let err = new Error("Product out of stock");
+        err.status = 500;
+        throw err;
+    }
 }
 
 model.addToCart = async(productItem,userEmail)=>{
     console.log("----Model------");
     // console.log(productItem);
-    // console.log("MODEl = "+userEmail);
+    console.log("MODEl = "+productItem);
     let cartCollection = await connection.getOrderSchema();
     let cartOfUser = await cartCollection.findOne({userEmail:userEmail});
-
+    // let available = await this.checkAvailability(productItem);
     if(!cartOfUser){
         let cartObj = {}
+        cartObj.orderId = await generateOrderId();
         cartObj.userEmail = userEmail;
         cartObj.products = []
         cartObj.products.push(productItem);
-        console.log("--------OBJ-----------");
         console.log(cartObj);
         let cartCreated = await cartCollection.create(cartObj);
         if(cartCreated){
-            // console.log("----IF--------");
-            // console.log(cartCreated);
+            console.log(cartCreated);
             return cartCreated;
         }else{
             return null;
         }
     }else{
         let newProductList = cartOfUser.products.push(productItem);
-        let updatedCart = await cartCollection.update({userEmail:userEmail},{$push:{products:productItem}})
-        console.log("-------ELSE--------");
-        console.log(cartOfUser);
-        return cartOfUser;
+        let updatedCart = await cartCollection.updateOne({userEmail:userEmail},{$push:{products:productItem}})
+        return await cartCollection.findOne({userEmail:userEmail});
     }
-// =======================================================================
-    //     let cartCollection = await connection.getOrderSchema();
-//     console.log(cartCollection);
-//     let cartOfUser = await cartCollection.findOne({userEmail:userEmail});
-   
-//    if(cartOfUser){
 
-//    }else{
-//        let newCartObj = {};
-//        newCartObj.products = [productItem];
-//        newCartObj.userEmail = userEmail;
-//        newCartObj.amount = productItem.price;
-//        let newCart = await connection.getOrderSchema();
-//        let isAdded = await newCart.create(newCartObj);
-//        if(isAdded){
-//            return newCartObj
-//        }else{
-//            return null;
-//        }
-//    }
-   
-   
-   
-   
-    // let oldAmount = cartOfUser.amount;
+}
 
-    // console.log(cartOfUser);
 
-    // let cartPush = await cartOfUser.updateOne({},{
-    //     $push:{
-    //         products:productItem
-    //     }
-    // })
-    // if(cartPush.nModified == 1){
-    //     return cartOfUser
-    // }else{
-    //     console.log("Error");
-    // }
-    // let isProductPresent = await cartOfUser.findOne({"products.productId":productItem.productId});
-    // if(isProductPresent){
-    //     // update already present product in cart
-    //     let isAvailable = this.checkAvailability(productItem);
-    //     if(!isAvailable){
-    //         let err = new Error("Product is out of stock");
-    //         err.status = 500;
-    //         throw err;
-    //     }else{
-    //         let updateProduct = await cartOfUser.updateOne({userEmail:userEmail},
-    //             {"products.quantity":{
-    //                 $inc:1
-    //             }}
-    //             );
-    //             if(updateProduct.nModified == 1){
-    //                 let updateCost = await cartOfUser.updateOne({userEmail:userEmail},{
-    //                     amount:{
-    //                         $inc:productItem.price
-    //                     }
-    //                 })
-    //                 if(updateCost.nModified == 1){
-    //                     return await cartOfUser.findOne({userEmail:userEmail});
-    //                 }   
-    //             }
-    //     }
-    // }else{
-    //     //push fresh product
-        
-    // }
+model.viewCart = async(email)=>{
+    let cart = await connection.getOrderSchema();
+    let userCart = await cart.findOne({userEmail:email});
+    if(userCart.products.length > 0){
+        return userCart
+    }else{
+            return null;        
+    }
 }
 
 module.exports = model;

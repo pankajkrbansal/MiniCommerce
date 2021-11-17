@@ -31,7 +31,6 @@ export class ProductsComponent implements OnInit {
     
     this.service.addToCart(product,email).subscribe((response)=>{
       console.log(response);
-      
     })
   }
 }
