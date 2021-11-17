@@ -1,0 +1,19 @@
+<!-- <p>products works!</p> -->
+<div class="container">
+    <div class="row" >
+        <div class="card offset-md-1 col-md-3 mt-5" *ngFor="let products of productsArray">
+            <!-- <img src="{{../../assets/console.jpg}}" alt="">  -->
+            <img class="card-img-top" src="../../assets/{{products?.img}}">
+            <div class="card-header">
+                <h3>{{products.title}}</h3>
+            </div>
+            <div class="card-body">
+                {{products.desc}} <br>
+                <h4>{{products.price}}</h4>
+            </div>
+            <div class="card-footer" style="cursor: pointer;" (click)="getClickedProduct(products)">
+                Add To Cart
+            </div>
+        </div>
+    </div>
+</div>

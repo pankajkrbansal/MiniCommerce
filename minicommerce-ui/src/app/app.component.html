@@ -2,14 +2,16 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link" [routerLink]="['/']">Home</a>
-      <a class="nav-item nav-link" [routerLink]="['/department']">Department</a>
-      <a class="nav-item nav-link" [routerLink]="['/employees']">Employees</a>
-      <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
-      <a class="nav-item nav-link" >LogOut</a>
+      <a class="nav-item nav-link" [routerLink]="['/products']">Products</a>
+      <!-- <a class="nav-item nav-link" [routerLink]="['/employees']">Employees</a> -->
+      <a class="nav-item nav-link" (click)="logout()">LogOut</a>
+      <!-- <i class="bi bi-cart" style="color:white"></i>
+      <i class="fa fa-shopping-cart" style="font-size:48px;color:white"></i> -->
+      <a class="nav-item nav-link" [routerLink]="['/cart']">Cart</a>
     </div>
   </div>
 </nav>
-
-<!-- <h3>Welcome to departmentView</h3> -->
-
-<router-outlet></router-outlet>
+<!-- <app-user-auth></app-user-auth> -->
+<div>
+  <router-outlet></router-outlet>
+</div>

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'minicommerce-ui';
+  logout(){
+    console.log("Click");
+    
+    localStorage.clear()
+  }
 }
+

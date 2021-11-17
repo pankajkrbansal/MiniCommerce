@@ -5,7 +5,7 @@ const product = [
         prodId:"P1001",
         title:"Gaming Laptop",
         desc:"Best gaming laptop in market.",
-        img:"GamingLaptop.png",
+        img:"GamingLaptop.jpg",
         categories:"Laptop",
         quantityAvailable:"10",
         color:"Grey",
@@ -15,7 +15,7 @@ const product = [
         prodId:"P1002",
         title:"Office Laptop",
         desc:"Best gaming laptop in market.",
-        img:"OfficeLaptop.png",
+        img:"OfficeLaptop.jpg",
         categories:"Laptop",
         quantityAvailable:"10",
         color:"Grey",
@@ -24,7 +24,7 @@ const product = [
         prodId:"P1003",
         title:"Gaming Keyboard",
         desc:"Best gaming Keyboard in market.",
-        img:"keyboard.png",
+        img:"keyboard.jpg",
         categories:"keyboard",
         quantityAvailable:"10",
         color:"Grey",
@@ -33,7 +33,7 @@ const product = [
         prodId:"P1004",
         title:"Gaming Mouse",
         desc:"Best gaming mouse in market.",
-        img:"mouse.png",
+        img:"console.jpg",
         categories:"Mouse",
         quantityAvailable:"10",
         color:"Grey",
@@ -43,6 +43,7 @@ const product = [
 
 const user = [
     {
+        userId:"1001",
         userName:"Jeff",
         userEmail:"jeff@gmail.com",
         userPwd:"jeff@1998",
@@ -56,9 +57,13 @@ const order = [
         userEmail:"jeff@gmail.com",
         products:[
             {
-                productId:"P1001",
+                prodId:"P1001",
                 title:"Gaming Laptop",
-                quantity:1,
+                desc:"Best gaming laptop in market.",
+                img:"GamingLaptop.jpg",
+                categories:"Laptop",
+                quantityAvailable:"10",
+                color:"Grey",
                 price:40000
             }
         ],

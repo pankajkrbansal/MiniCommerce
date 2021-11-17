@@ -8,13 +8,14 @@ const productSchema = mongoose.Schema({
     title:{type:String,required:true,unique:true},
     desc:{type:String,required:true},
     img:{type:String,required:true},
-    categories:{type:String,required:true},
-    quantityAvailable:{type:Number,required:true,min:1},
+    categories:{type:String},
+    quantityAvailable:{type:Number,min:1},
     color:{type:String},
     price:{type:Number,required:true}
 },{collection:"Product",timestamps:true})
 
 const userSchema = mongoose.Schema({
+    userId:{type:String,required:true,unique:true},
     userName:{type:String,required:true,unique:true},
     userEmail:{type:String,required:true,unique:true},
     userPwd:{type:String,required:true},
@@ -25,15 +26,19 @@ const orderSchema = mongoose.Schema({
     userEmail:{type:String,required:true,unique:true},
     products:[
         {
-            productId:{type:String,required:true},
+            prodId:{type:String,required:true,unique:true},
             title:{type:String,required:true,unique:true},
-            quantity:{type:Number,default:1},
+            desc:{type:String,required:true},
+            img:{type:String,required:true},
+            categories:{type:String,required:true},
+            quantityAvailable:{type:Number,},
+            color:{type:String},
             price:{type:Number,required:true}
         }
     ],
-    amount:{type:Number,required:true},
-    address:{type:Object,required:true},
-    status:{type:String,default:"Ordered"}
+    amount:{type:Number,required:true,default:0},
+    address:{type:Object,required:true,default:""},
+    status:{type:String}
 },{collection:"Order"},{timestamps:true})
 
 const collection = {};

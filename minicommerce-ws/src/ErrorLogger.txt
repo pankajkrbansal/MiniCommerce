@@ -1,0 +1,173 @@
+Tue Nov 16 2021 16:03:47 GMT+0530 (India Standard Time) - ReferenceError: User is not defined
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:19:27
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:47:12)Tue Nov 16 2021 16:03:56 GMT+0530 (India Standard Time) - ReferenceError: User is not defined
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:19:27
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:47:12)Tue Nov 16 2021 16:04:59 GMT+0530 (India Standard Time) - ReferenceError: User is not defined
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:19:27
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:47:12)Tue Nov 16 2021 16:06:42 GMT+0530 (India Standard Time) - ReferenceError: service is not defined
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:20:27
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:47:12)Tue Nov 16 2021 16:07:16 GMT+0530 (India Standard Time) - ReferenceError: service is not defined
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:21:27
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:47:12)Tue Nov 16 2021 16:08:42 GMT+0530 (India Standard Time) - ReferenceError: service is not defined
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:21:27
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\layer.js:95:5)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\express\lib\router\index.js:47:12)Tue Nov 16 2021 16:09:21 GMT+0530 (India Standard Time) - ValidationError: User validation failed: userId: Path `userId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Tue Nov 16 2021 16:10:17 GMT+0530 (India Standard Time) - TypeError: this.generateId is not a function
+    at Object.model.didRegister (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:22:26)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.didRegister (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:5:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:21:27Tue Nov 16 2021 16:10:31 GMT+0530 (India Standard Time) - ValidationError: User validation failed: userId: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "userId"
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at model.$set (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:1447:12)
+    at model.$set (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:1149:16)
+    at model.Document (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:158:12)
+    at model.Model (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\model.js:106:12)
+    at new model (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\model.js:4763:15)
+    at Array.<anonymous> (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\model.js:3320:17)
+    at _start (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\helpers\parallelLimit.js:27:37)
+    at parallelLimit (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\helpers\parallelLimit.js:23:5)
+    at Function.Model.$__insertMany (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\model.js:3350:3)Tue Nov 16 2021 22:22:07 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'amount' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:62:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:53:27Tue Nov 16 2021 22:22:42 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'amount' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:62:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:54:27Tue Nov 16 2021 22:24:57 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'amount' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:62:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:54:27Tue Nov 16 2021 22:25:44 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'amount' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:62:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Tue Nov 16 2021 22:28:06 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'amount' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:62:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Tue Nov 16 2021 22:31:31 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'amount' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:62:32)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Tue Nov 16 2021 22:33:00 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'updateOne' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:66:37)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Tue Nov 16 2021 22:33:53 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'updateOne' of null
+    at Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:67:37)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Tue Nov 16 2021 22:38:53 GMT+0530 (India Standard Time) - ReferenceError: userObj is not defined
+    at Object.model.didRegister (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:28:27)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.didRegister (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:5:23)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:24:27Tue Nov 16 2021 22:45:19 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: products.0.productId: Path `productId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at EmbeddedDocument.Subdocument.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\types\subdocument.js:204:12)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 15:00:56 GMT+0530 (India Standard Time) - Error: Register before login
+    at Object.model.loginHandle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:39:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.loginHandle (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:17:25)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:34:29Wed Nov 17 2021 15:08:58 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: products.0.productId: Path `productId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at EmbeddedDocument.Subdocument.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\types\subdocument.js:204:12)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 15:09:51 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: products.0.productId: Path `productId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at EmbeddedDocument.Subdocument.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\types\subdocument.js:204:12)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 15:10:08 GMT+0530 (India Standard Time) - Error: Failed to add to cart
+    at Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:43:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 15:14:38 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: products.0.productId: Path `productId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at EmbeddedDocument.Subdocument.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\types\subdocument.js:204:12)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 15:21:15 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: products.0.quantityAvailable: Path `quantityAvailable` is required., products.0.categories: Path `categories` is required., products.0.img: Path `img` is required., products.0.desc: Path `desc` is required., products.0.prodId: Path `prodId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at EmbeddedDocument.Subdocument.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\types\subdocument.js:204:12)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 15:21:49 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: products.0.categories: Path `categories` is required., products.0.img: Path `img` is required., products.0.desc: Path `desc` is required., products.0.prodId: Path `prodId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at EmbeddedDocument.Subdocument.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\types\subdocument.js:204:12)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 15:23:07 GMT+0530 (India Standard Time) - ValidationError: Order validation failed: products.0.categories: Path `categories` is required., products.0.img: Path `img` is required., products.0.desc: Path `desc` is required., products.0.prodId: Path `prodId` is required.
+    at model.Document.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2906:32)
+    at EmbeddedDocument.Subdocument.invalidate (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\types\subdocument.js:204:12)
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\document.js:2697:17
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\schematype.js:1280:9
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)Wed Nov 17 2021 15:27:51 GMT+0530 (India Standard Time) - CastError: Cast to embedded failed for value "2" (type string) at path "products"
+    at model.Query.exec (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\query.js:4545:21)
+    at model.Query.Query.then (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\query.js:4644:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)Wed Nov 17 2021 15:27:58 GMT+0530 (India Standard Time) - CastError: Cast to embedded failed for value "2" (type string) at path "products"
+    at model.Query.exec (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\query.js:4545:21)
+    at model.Query.Query.then (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongoose\lib\query.js:4644:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)Wed Nov 17 2021 15:30:58 GMT+0530 (India Standard Time) - MongoServerError: E11000 duplicate key error collection: minniCommerceDB.Order index: products.title_1 dup key: { products.title: "Gaming Keyboard" }
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\operations\insert.js:51:33
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+    at handleOperationResult (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\sdam\server.js:363:9)
+    at MessageStream.messageHandler (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection.js:479:9)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at Socket.ondata (internal/streams/readable.js:719:22)
