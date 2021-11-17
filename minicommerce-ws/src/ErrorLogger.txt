@@ -293,4 +293,44 @@ Tue Nov 16 2021 16:03:47 GMT+0530 (India Standard Time) - ReferenceError: User i
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
     at async Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:84:27)
     at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
-    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Wed Nov 17 2021 22:46:56 GMT+0530 (India Standard Time) - MongoServerError: E11000 duplicate key error collection: minniCommerceDB.Order index: products.title_1 dup key: { products.title: "Gaming Laptop" }
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\operations\update.js:80:33
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+    at handleOperationResult (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\sdam\server.js:363:9)
+    at MessageStream.messageHandler (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection.js:479:9)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at Socket.ondata (internal/streams/readable.js:719:22)Wed Nov 17 2021 22:49:14 GMT+0530 (India Standard Time) - MongoServerError: E11000 duplicate key error collection: minniCommerceDB.Order index: products.title_1 dup key: { products.title: "Gaming Keyboard" }
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\operations\update.js:80:33
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+    at handleOperationResult (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\sdam\server.js:363:9)
+    at MessageStream.messageHandler (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection.js:479:9)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at Socket.ondata (internal/streams/readable.js:719:22)Wed Nov 17 2021 22:49:55 GMT+0530 (India Standard Time) - MongoServerError: E11000 duplicate key error collection: minniCommerceDB.Order index: products.title_1 dup key: { products.title: "Office Laptop" }
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\operations\update.js:80:33
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+    at handleOperationResult (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\sdam\server.js:363:9)
+    at MessageStream.messageHandler (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection.js:479:9)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at Socket.ondata (internal/streams/readable.js:719:22)Wed Nov 17 2021 22:50:31 GMT+0530 (India Standard Time) - MongoServerError: E11000 duplicate key error collection: minniCommerceDB.Order index: products.title_1 dup key: { products.title: "Office Laptop" }
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\operations\update.js:80:33
+    at D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection_pool.js:272:25
+    at handleOperationResult (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\sdam\server.js:363:9)
+    at MessageStream.messageHandler (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\connection.js:479:9)
+    at MessageStream.emit (events.js:315:20)
+    at processIncomingData (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:108:16)
+    at MessageStream._write (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\node_modules\mongodb\lib\cmap\message_stream.js:28:9)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at MessageStream.Writable.write (internal/streams/writable.js:303:10)
+    at Socket.ondata (internal/streams/readable.js:719:22)

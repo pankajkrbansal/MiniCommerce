@@ -11,6 +11,7 @@ export class CartComponent implements OnInit {
 
   constructor(private service:CommerceServiceService,private fb:FormBuilder) { }
   cart;
+  amt;
   errorMsg = null;
   email = localStorage.getItem('email');
   checkOutForm:FormGroup
@@ -27,8 +28,9 @@ export class CartComponent implements OnInit {
     console.log("getCart = > "+this.email);
     this.service.viewCart(this.email).subscribe((res)=>{
       console.log("Called");
+      this.amt = res.amount
       this.cart = res.products;
-      console.log(res.products);
+      console.log(res);
     },(error)=>{
       console.log(error);
     })

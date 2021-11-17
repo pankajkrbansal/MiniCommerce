@@ -27,8 +27,8 @@ const orderSchema = mongoose.Schema({
     userEmail:{type:String,required:true,unique:true},
     products:[
         {
-            prodId:{type:String,required:true,unique:true},
-            title:{type:String,required:true,unique:true},
+            prodId:{type:String,required:true},
+            title:{type:String,required:true},
             desc:{type:String,required:true},
             img:{type:String,required:true},
             categories:{type:String,required:true},

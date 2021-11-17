@@ -77,7 +77,7 @@ model.checkAvailability = async(productItem)=>{
 model.addToCart = async(productItem,userEmail)=>{
     console.log("----Model------");
     // console.log(productItem);
-    console.log("MODEl = "+productItem);
+    // console.log("MODEl = "+productItem);
     let cartCollection = await connection.getOrderSchema();
     let cartOfUser = await cartCollection.findOne({userEmail:userEmail});
     // let available = await this.checkAvailability(productItem);
@@ -87,10 +87,11 @@ model.addToCart = async(productItem,userEmail)=>{
         cartObj.userEmail = userEmail;
         cartObj.products = []
         cartObj.products.push(productItem);
-        console.log(cartObj);
+        // console.log(cartObj);
         let cartCreated = await cartCollection.create(cartObj);
         if(cartCreated){
-            console.log(cartCreated);
+            // console.log(cartCreated);
+            getAmount(userEmail);
             return cartCreated;
         }else{
             return null;
@@ -98,11 +99,21 @@ model.addToCart = async(productItem,userEmail)=>{
     }else{
         let newProductList = cartOfUser.products.push(productItem);
         let updatedCart = await cartCollection.updateOne({userEmail:userEmail},{$push:{products:productItem}})
+        getAmount(userEmail);
         return await cartCollection.findOne({userEmail:userEmail});
     }
-
+// calculate amount for cart
+    // getAmount();
 }
 
+const getAmount = async(userEmail)=>{
+    let cart = await connection.getOrderSchema();
+    let cartUser = await cart.findOne({userEmail:userEmail});
+    let prodArray = cartUser.products;
+    let amt = 0;
+    prodArray.map((eachProd)=>{ amt =   eachProd.price + amt });
+    await cart.updateOne({userEmail:userEmail},{$set:{amount:amt}});
+}
 
 model.viewCart = async(email)=>{
     let cart = await connection.getOrderSchema();
