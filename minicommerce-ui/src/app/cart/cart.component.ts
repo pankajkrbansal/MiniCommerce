@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { CommerceServiceService } from '../commerce-service.service';
 
 @Component({
@@ -9,14 +10,17 @@ import { CommerceServiceService } from '../commerce-service.service';
 })
 export class CartComponent implements OnInit {
 
-  constructor(private service:CommerceServiceService,private fb:FormBuilder) { }
+  constructor(private service:CommerceServiceService,private fb:FormBuilder,private router:Router) { }
   cart;
   amt;
   errorMsg = null;
   email = localStorage.getItem('email');
   checkOutForm:FormGroup
   ngOnInit(): void {
-    // let email = localStorage.getItem('email');
+    let email = localStorage.getItem('email');
+    if(!email){
+      this.router.navigateByUrl('/register');
+    }
     this.checkOutForm = this.fb.group(
       {
         address:['',Validators.required]

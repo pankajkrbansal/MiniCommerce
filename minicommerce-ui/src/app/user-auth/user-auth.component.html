@@ -9,6 +9,8 @@
                 <input type="text" class="form-control" id="name" formControlName="userName">
                 <div class="nameError" *ngIf="(registerForm.controls.userName.invalid && registerForm.controls.userName.dirty) || registerForm.controls.userName.touched">
                     <span class="text text-danger" *ngIf="registerForm.controls.userName.errors?.required">Field is required</span>
+                    
+
                 </div>
               </div>
               <div class="userEmail form-group">
@@ -16,6 +18,9 @@
                 <input type="text" id="email" class="form-control" formControlName="userEmail">
                 <div class="nameError" *ngIf="(registerForm.controls.userEmail.invalid && registerForm.controls.userEmail.dirty) || registerForm.controls.userEmail.touched">
                     <span class="text text-danger" *ngIf="registerForm.controls.userEmail.errors?.required">Field is required</span>
+                    <span class="text text-danger" *ngIf="registerForm.controls.userEmail.errors?.emailError && !registerForm.controls.userEmail.errors?.required">
+                        {{registerForm.controls.userEmail.errors.emailError.message}}
+                    </span>
                 </div>
               </div>
               <div class="userPwd form-group">
@@ -38,6 +43,9 @@
                     <input type="text" formControlName="userEmail" id="email" class="form-control">
                     <div class="emailError" *ngIf="(loginForm.controls.userEmail.dirty && loginForm.controls.userEmail.invalid) || loginForm.controls.userEmail.touched">
                         <span class="text text-danger" *ngIf="loginForm.controls.userEmail.errors?.required">Field required</span>
+                        <span class="text text-danger" *ngIf="loginForm.controls.userEmail.errors?.emailError && !loginForm.controls.userEmail.errors?.required">
+                            {{loginForm.controls.userEmail.errors.emailError.message}}
+                        </span>
                     </div>
                 </div>
                 <div class="form-control">

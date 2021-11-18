@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CommerceServiceService } from '../commerce-service.service';
 
@@ -17,17 +17,30 @@ export class UserAuthComponent implements OnInit {
   loginForm:FormGroup
   ngOnInit(): void {
     this.registerForm = this.fb.group({
-      userName:['',[Validators.required]],
-      userEmail:['',[Validators.required]],
-      userPwd:['',[Validators.required]]
+      userName:['',[Validators.required,Validators.minLength(5)]],
+      userEmail:['',[Validators.required,this.validateEmail]],
+      userPwd:['',[Validators.required,Validators.minLength(5)]]
     });
     this.loginForm = this.fb.group({
       // usrName:['',[Validators.required]],
-      userEmail:['',[Validators.required]],
+      userEmail:['',[Validators.required,this.validateEmail]],
       userPwd:['',[Validators.required]]
     });
   }
   
+  validateEmail(c:FormControl){
+    let email = c.value;
+    let regex = /^[a-z0-9]+@(gmail|yahoo).(com|in)$/
+    if(regex.test(email)){
+      return null
+    }else{
+      return {
+        emailError:{
+          message:"Enter valid email. e.g bruce@gmail.com"
+        }
+      }
+    }
+  }
 
   errorMsg:String = null;
   isUser:Boolean = false;
@@ -36,6 +49,7 @@ export class UserAuthComponent implements OnInit {
       // localStorage.setItem('email',this.registerForm.value.userEmail);
       // localStorage.setItem('pwd',this.registerForm.value.userPwd);
       this.isUser = true;
+      alert("Register successful");
       },(error)=>{
       console.log(error);
       this.errorMsg =error.error.message;

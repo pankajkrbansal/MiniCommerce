@@ -1,4 +1,9 @@
 <!-- <p>cart works!</p> -->
+
+<div class="container" *ngIf="cart.length == 0">
+    <h4>Your cart is empty</h4>
+</div>
+
 <div class="container" *ngIf="!sendProducts">
     <div class="row mt-4" *ngFor="let item of cart">
         <div class="col-md-2">
