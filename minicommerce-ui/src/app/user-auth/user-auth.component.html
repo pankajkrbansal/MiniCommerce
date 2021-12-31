@@ -6,11 +6,10 @@
                 
               <div class="usrName form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" formControlName="userName">
+                <input type="text" minlength="5" class="form-control" id="name" formControlName="userName">
                 <div class="nameError" *ngIf="(registerForm.controls.userName.invalid && registerForm.controls.userName.dirty) || registerForm.controls.userName.touched">
                     <span class="text text-danger" *ngIf="registerForm.controls.userName.errors?.required">Field is required</span>
-                    
-
+                    <!-- <span class="text text-danger" *ngIf="registerForm.controls.userName.errors?.minLength && !registerForm.controls.userName.errors?.required">Minimum length is 5</span> -->
                 </div>
               </div>
               <div class="userEmail form-group">
@@ -28,6 +27,9 @@
                 <input type="password" id="pwd" class="form-control" formControlName="userPwd">
                 <div class="nameError" *ngIf="(registerForm.controls.userPwd.invalid && registerForm.controls.userPwd.dirty) || registerForm.controls.userPwd.touched">
                     <span class="text text-danger" *ngIf="registerForm.controls.userPwd.errors?.required">Field is required</span>
+                    <span class="text text-danger" *ngIf="registerForm.controls.userPwd.errors?.pwdError && !registerForm.controls.userPwd.errors?.required">
+                        {{registerForm.controls.userPwd.errors.pwdError.message}}
+                    </span>
                 </div>
               </div>  
               <button class="btn btn-primary" style="width: 100%;" [disabled]="registerForm.invalid">Register</button>

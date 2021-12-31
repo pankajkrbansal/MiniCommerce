@@ -24,7 +24,7 @@ export class UserAuthComponent implements OnInit {
     this.loginForm = this.fb.group({
       // usrName:['',[Validators.required]],
       userEmail:['',[Validators.required,this.validateEmail]],
-      userPwd:['',[Validators.required]]
+      userPwd:['',[Validators.required,this.password]]
     });
   }
   
@@ -37,6 +37,20 @@ export class UserAuthComponent implements OnInit {
       return {
         emailError:{
           message:"Enter valid email. e.g bruce@gmail.com"
+        }
+      }
+    }
+  }
+
+  password(c:FormControl){
+    let pwd = c.value;
+    let regex = /^[a-z0-9_@.]{5,10}$/
+    if(regex.test(pwd)){
+      return null
+    }else{
+      return {
+        pwdError:{
+          message:"password can contain digits, a-z, @,_,."
         }
       }
     }

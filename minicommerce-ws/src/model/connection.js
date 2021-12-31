@@ -23,8 +23,8 @@ const userSchema = mongoose.Schema({
 },{collection:"User",timestamps:true})
 
 const orderSchema = mongoose.Schema({
-    orderId:{type:String,required:true,unique:true},
-    userEmail:{type:String,required:true,unique:true},
+    orderId:{type:String,required:true},
+    userEmail:{type:String,required:true},
     products:[
         {
             prodId:{type:String,required:true},
