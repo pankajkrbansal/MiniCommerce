@@ -63,25 +63,31 @@ model.getAllProducts = async () => {
   }
 };
 
-model.checkAvailability = async (productItem) => {
+const checkAvailability = async (productItem) => {
   let product = await connection.getProductSchema();
-  let item = await product.find({ prodId: productItem.prodId });
-  if (item.quantity >= 1) {
-    return true;
-  } else {
-    let err = new Error("Product out of stock");
-    err.status = 500;
-    throw err;
+  let item = await product.findOne({ prodId: productItem.prodId });
+  console.log("item quantitty= " + item.quantityAvailable);
+  if (item.quantityAvailable >= 1) {
+    let updatedQuantity = await product.updateOne(
+      { prodId: productItem.prodId },
+      { $inc: { quantityAvailable: -1 } }
+    );
+
+    if (updatedQuantity.nModified == 1) {
+      return true;
+    } else {
+      let err = new Error("Product out of stock. Try after some time.");
+      err.status = 500;
+      throw err;
+    }
   }
 };
 
 model.addToCart = async (productItem, userEmail) => {
-  console.log("----Model------");
-  console.log(productItem);
-  console.log("MODEL = " + productItem);
   let cartCollection = await connection.getOrderSchema();
   let cartOfUser = await cartCollection.findOne({ userEmail: userEmail });
-  // let available = await this.checkAvailability(productItem);
+  let available = await checkAvailability(productItem);
+  console.log("Avaibalr = "+available);
   if (!cartOfUser) {
     let cartObj = {};
     cartObj.orderId = await generateOrderId();

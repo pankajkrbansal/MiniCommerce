@@ -13,6 +13,7 @@ export class CartComponent implements OnInit {
   constructor(private service:CommerceServiceService,private fb:FormBuilder,private router:Router) { }
   cart;
   amt;
+  cartLength;
   errorMsg = null;
   email = localStorage.getItem('email');
   checkOutForm:FormGroup
@@ -34,6 +35,7 @@ export class CartComponent implements OnInit {
       console.log("Called");
       this.amt = res.amount
       this.cart = res.products;
+      this.cartLength = this.cart.length;
       console.log(res);
     },(error)=>{
       console.log(error);
