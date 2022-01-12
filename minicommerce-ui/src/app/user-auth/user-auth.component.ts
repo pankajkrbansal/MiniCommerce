@@ -26,6 +26,7 @@ export class UserAuthComponent implements OnInit {
       userEmail:['',[Validators.required,this.validateEmail]],
       userPwd:['',[Validators.required,this.password]]
     });
+
   }
   
   validateEmail(c:FormControl){
@@ -75,9 +76,14 @@ export class UserAuthComponent implements OnInit {
   loginUser(){
     this.service.loginUser(this.loginForm.value).subscribe((response)=>{
      console.log(response);
+     
      localStorage.setItem('email',this.loginForm.value.userEmail);
      localStorage.setItem('pwd',this.loginForm.value.userPwd);
+
+     this.service.getCart(this.loginForm.value.userEmail);
+     
      this.router.navigateByUrl('/products');
+    
     },(erorr)=>{
         this.router.navigateByUrl('/register');
     })

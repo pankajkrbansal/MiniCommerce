@@ -567,4 +567,16 @@ Tue Nov 16 2021 16:03:47 GMT+0530 (India Standard Time) - ReferenceError: User i
     at processTicksAndRejections (internal/process/task_queues.js:93:5)
     at async Object.model.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:89:19)
     at async Object.user.addToCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:39:23)
-    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:55:27Mon Jan 10 2022 18:23:30 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:133:16)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24Mon Jan 10 2022 18:39:12 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:133:16)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24Mon Jan 10 2022 18:39:12 GMT+0530 (India Standard Time) - TypeError: Cannot read property 'products' of null
+    at Object.model.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\model\model.js:133:16)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Object.user.viewCart (D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\services\service.js:51:20)
+    at async D:\MiniCommerce\MiniCommerce-1\minicommerce-ws\src\routing\routing.js:65:24

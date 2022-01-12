@@ -64,8 +64,8 @@ router.get('/viewcart/:email',async(req,res,next)=>{
         let email = req.params.email;
         let cartView = await service.viewCart(email);
         console.log("-----Cart-------");
-        console.log(cartView);
-        res.json(cartView)
+        console.log(cartView.products);
+        return cartView.products
     }catch(error){
         next(error);
     }

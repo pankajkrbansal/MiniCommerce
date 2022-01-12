@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CommerceServiceService {
+  cart;
   constructor(private http: HttpClient) {}
   getAllproducts(): Observable<any> {
     return this.http.get('http://localhost:1050/products');
@@ -32,9 +33,28 @@ export class CommerceServiceService {
     return this.http.get(`http://localhost:1050/viewcart/${userEmail}`);
   }
 
+  getCart(userEmail): Observable<any> {
+    console.log("called");
+    
+    this.http
+      .get(`http://localhost:1050/viewcart/${userEmail}`)
+      .subscribe((res) => {
+        
+        console.log(res);
+        this.cart = res
+      });
+    return;
+  }
+
   checkOut(data, email): Observable<any> {
     console.log(data);
 
     return this.http.post(`http://localhost:1050/checkout/${email}`, data);
+  }
+
+
+
+  returnCartValue(){
+    return this.cart;    
   }
 }
